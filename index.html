@@ -2,49 +2,56 @@
   <html>
     <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>LoginPage</title>
+    <title>Carousel Odesaa</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form id="login_page">
-       <a class="link" href="../index.html">Home</a><br>
-      <fieldset class="fieldset_border">
-        <legend>Login details</legend>
-        <ul>
-          <li>
-            <label class="required"> 
-              <div>UserName</div>
-              <input type="text" name="userName" id="userName" required>
-            </label>
-          </li>  
-          <li>
-            <label class="required">
-              <div>Password</div>
-              <input type="password" name="password" id="password" required>
-            </label>
-          </li>
-          <li>
-            <label class="required">
-              <div>Confirm Password</div>
-              <input type="password"
-                     name="confirm_password"
-                    id="confirm_password" required>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <div>
-        <input type="submit" class="submit_btn" value="Submit">
-      </div>
-    </form> 
-    <script type="text/javascript" src="loginPage.js"></script>
-  </body>
-</html>
-    
-    
-    
-    
-    
-  </body>
+    <h2>Images of Odessa</h2>
+<ul class="carousel-container radio">
+  <li>
+    <input class="carousel-toggle" id="slide-1" type="radio" name="c-toggle" checked/> 
+    <label class="dot" for="slide-1"></label>
+    <ul class="carousel-content">
+      <li>
+        <img src="http://i.imgur.com/Z4t8JZw.png?2"/>
+        <label class="arrow back" for="slide-2">&#8250;	</label>      
+        <label class="arrow next" for="slide-4">&#8249;</label>
+      </li>
+    </ul> <!-- carousel-content -->
+  </li> <!-- carousel-toggle one -->
+  <li>
+    <input class="carousel-toggle" id="slide-2" type="radio" name="c-toggle" />   
+    <label class="dot" for="slide-2"></label>
+    <ul class="carousel-content">
+      <li>
+        <img src="http://i.imgur.com/qLMWUD4.jpg?3"/>
+        <label class="arrow back" for="slide-3">&#8250;	</label>       
+        <label class="arrow next" for="slide-1">&#8249;</label>  
+      </li>  
+    </ul>  <!-- carousel-content -->  
+  </li> <!-- carousel toggl2 -->  
+  <li>  
+    <input class="carousel-toggle" id="slide-3" type="radio" name="c-toggle" /> 
+    <label class="dot" for="slide-3"></label> 
+    <ul class="carousel-content">
+      <li>
+        <img src="http://i.imgur.com/FfxWaq3.jpg?3"/>
+        <label class="arrow back" for="slide-4">&#8250;	</label>                  
+        <label class="arrow next" for="slide-2">&#8249;</label>
+      </li>
+    </ul> <!--carousel content --> 
+  </li>  <!-- toggle 3-->
+  <li>
+    <input class="carousel-toggle" id="slide-4" type="radio" name="c-toggle" />        
+    <label class="dot" for="slide-4"></label>
+    <ul class="carousel-content">
+      <img src="http://i.imgur.com/rWSqIOc.jpg?2"/>
+      <label class="arrow back" for="slide-1">&#8250;	</label>                        
+      <label class="arrow next" for="slide-3">&#8249;</label>                  
+    </ul>  <!-- carousel content -->  
+  </li>  <!-- toggle 4 -->
+</ul> <!-- carousel container -->
+<hr />
+</body>
 </html>
